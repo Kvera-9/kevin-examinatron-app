@@ -1,10 +1,10 @@
 const express = require('express')
 
-require('../db/mongoose')
-const Test = require('../models/test') // optional
+require('../db/mongoose.js')
+const Test = require('../models/test.js') // optional
 const testRouter = require('../routers/test')
 
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 // express app
 const app = express()
